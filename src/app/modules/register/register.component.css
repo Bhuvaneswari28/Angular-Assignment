@@ -1,0 +1,54 @@
+.container-fluid {
+    height: 100%;
+    background-color:rgb(28, 88, 73);
+    
+    
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+    color:white;
+    margin-top:35px;
+}
+.heading2{
+    text-align: center;
+    margin: 20px;
+    color:white;
+    margin-top:35px;
+}
+
+
+form {
+    background-color: rgb(41, 224, 179);
+    
+    
+}
+#f,#r{margin-left:30%;
+margin-right: 30%;}
+#f{
+    padding:-5%;
+}
+#ff{
+    padding:10%;
+}
+
+.result {
+    background-color: rgb(41, 224, 179);
+    padding: 30px;
+    font-size: 0.5cm;
+}
+
+@media only screen and (max-width: 770px) {
+    .container-fluid {
+        height: 150.5vh;
+    }
+    form {
+        margin-bottom: 30px;
+    }
+}
+
+.output {
+    padding: 10px;
+   
+}

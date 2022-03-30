@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <h4 class="heading">Registration Form</h4>
+            <div class="col-md-6" id="f">
+                <form id="ff">
+                    <div class="form-group">
+                        <label for="exampleInputName">Name</label>&nbsp;&nbsp;
+                        <input type="text" #nameForm class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>&nbsp;&nbsp;
+                        <input type="email" #emailForm class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label> &nbsp;&nbsp;
+                        <input type="password" #passwordForm class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleInputNumber">Phone Number</label>&nbsp;&nbsp;
+                        <input type="text" #numberForm class="form-control" id="exampleInputNumber" aria-describedby="numberHelp" placeholder="Enter number" required>
+                    </div><br>
+                    <button type="button" (click)="submit(nameForm.value,emailForm.value,passwordForm.value,numberForm.value)" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <h4 class="heading2">Data Submitted</h4>
+            <div class="col-md-6">
+                <div class="result" id="r">
+                    <div class="output">
+                        <label>Name</label>: <span>{{name2}}</span>
+                    </div>
+                    <div class="output">
+                        <label>Email</label>: <span>{{email2}}</span>
+                    </div>
+                    <div class="output">
+                        <label>Password</label>: <span>{{password2}}</span>
+                    </div>
+                    <div class="output">
+                        <label>Phone Number</label>: <span>{{number2}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
